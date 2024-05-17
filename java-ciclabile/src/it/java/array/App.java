@@ -9,15 +9,18 @@ public class App {
 
         ArrayList array = new ArrayList(arrayElements);
 
-        int index = array.getCurrentIndex();
-
-        array.addElement(45);
+        array.addElement(30);
+        array.addElement(40);
 
         while (array.hasElements()) {
+
+            int index = array.getCurrentIndex();
 
             // array.getNextElement();
 
             System.out.print("indice : " + index + " Elemento :  " + array.getNextElement() + ", \n");
+
+            index++;
 
         }
     }
