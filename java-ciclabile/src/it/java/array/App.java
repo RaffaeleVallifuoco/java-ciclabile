@@ -11,6 +11,8 @@ public class App {
 
         int index = array.getCurrentIndex();
 
+        array.addElement(45);
+
         while (array.hasElements()) {
 
             // array.getNextElement();
