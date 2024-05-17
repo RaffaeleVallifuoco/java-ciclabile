@@ -9,8 +9,14 @@ public class App {
 
         ArrayList array = new ArrayList(arrayElements);
 
+        int index = array.getCurrentIndex();
+
         while (array.hasElements()) {
-            System.out.print(array.getNextElement() + ", \n");
+
+            // array.getNextElement();
+
+            System.out.print("indice : " + index + " Elemento :  " + array.getNextElement() + ", \n");
+
         }
     }
 }

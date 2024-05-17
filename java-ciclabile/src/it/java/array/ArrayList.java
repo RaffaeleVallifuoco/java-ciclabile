@@ -3,35 +3,37 @@ package it.java.array;
 public class ArrayList {
 
     private int[] intArray;
-    private int index;
-
-    // costruttore
+    private int currentIndex;
 
     public int[] getIntArray() {
         return intArray;
     }
 
-    public int getIndex() {
-        return index;
+    public int getCurrentIndex() {
+        return currentIndex;
     }
+
+    // costruttore
 
     public ArrayList(int[] intArray) {
 
         this.intArray = intArray;
-        this.index = 0;
+        this.currentIndex = 0;
     }
 
     // metodi
 
     public boolean hasElements() {
-        return index < intArray.length;
+        return currentIndex < intArray.length;
     }
 
     public int getNextElement() {
         if (hasElements()) {
         }
+        // System.out.println(intArray[currentIndex]);
+        // currentIndex++;
 
-        return intArray[index++];
+        return intArray[currentIndex++];
     }
 
 }
